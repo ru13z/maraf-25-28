@@ -1,7 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
+    color: #161616;
 }
 
 .header {
@@ -19,7 +24,6 @@ body {
 .site-heading {
     margin: 0;
     margin-bottom: 60px;
-    color: #161616;
     font-size: 42px;
     font-weight: 700;
     letter-spacing: 0.5px;
@@ -27,7 +31,6 @@ body {
 
 .slogan {
     margin-bottom: 24px;
-    color: #161616;
     font-size: 36px;
     font-weight: 300;
     letter-spacing: 0.43px;
@@ -40,4 +43,66 @@ body {
 .social-icons a {
     margin-right: 30px;
     text-decoration: none;
+}
+
+.about-me {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #e3f0f7;
+}
+
+.row-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-me-text {
+    width: 440px;
+}
+
+.about-me-text p {
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.34px;
+}
+
+.about-me-text ul {
+    margin: 0;
+    padding: 0;
+    padding-left: 30px;
+    list-style: none;
+    font-weight: 300;
+    letter-spacing: 0.34px;
+    font-size: 28px;
+
+}
+
+.about-me-text li {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.about-me-text li::before {
+    content: "—";
+    position: absolute;
+    left: -30px;
+    top: 0;
+}
+
+.about-me-photo {}
+
+.title-2 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0.48px;
+}
+
+.title-3 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.61;
+    letter-spacing: 0.34px;
 }
