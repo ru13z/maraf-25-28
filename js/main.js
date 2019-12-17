@@ -104,7 +104,7 @@ function calculanePrice() {
         mPixelPerfect * mRetinaReady * mGooglePageSpeed * mUrgentOrder;
 
 
-    return totalPriceu;
+    return totalPriceu.toFixed(2);
 }
 
 function calculanePriceR() {
@@ -157,16 +157,15 @@ function calculanePriceR() {
 
 
 
-    return totalPricer;
+    return totalPricer.toFixed(2);
 }
 
 function updatePrice(priceu) {
-    $('#total-price').text(priceu);
-
+    $('#total-price').text(parseFloat(priceu).toLocaleString());
 }
 
 function updatePriceR(pricer) {
-    $('#total-pricer').text(pricer);
+    $('#total-pricer').text(parseFloat(pricer).toLocaleString());
 }
 
 
