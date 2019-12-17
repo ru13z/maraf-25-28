@@ -5,7 +5,7 @@ let formData = form.serializeJSON();
 showHideBlocks();
 
 // Змінили дані в формі
-form.on('keyup change', 'input, select, textarea', function () {
+form.on('keyup change', 'input, select, textarea', function() {
     //console.log('Fired!');
     // Заново отримали обновлені дані з форми
     formData = form.serializeJSON();
@@ -83,7 +83,7 @@ function calculanePrice() {
 
     // Retina ready мультиплікатор
     let mRetinaReady = 1;
-    if (formData['retineReady'] == 'on') {
+    if (formData['retinaReady'] == 'on') {
         mRetinaReady = 1.2;
     }
 
@@ -135,7 +135,7 @@ function calculanePriceR() {
 
     // Retina ready мультиплікатор
     let mRetinaReady = 1;
-    if (formData['retineReady'] == 'on') {
+    if (formData['retinaReady'] == 'on') {
         mRetinaReady = 1.2;
     }
 
